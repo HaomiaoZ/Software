@@ -129,7 +129,7 @@ class ShadowFreekickerTacticTest : public testing::Test
     Angle goal_to_ball_angle;
     Angle goal_to_dest_angle;
 };
-
+//clang-format off
 /**
  * The two tests immediate below has the scene shown in the graph below
  *                                                                      Enemy
@@ -168,6 +168,7 @@ class ShadowFreekickerTacticTest : public testing::Test
  *     +-------------------------------------------------------------------------------------------------------------------------------------+
  *
  */
+//clang-format on
 
 TEST_F(ShadowFreekickerTacticTest,
        test_shadow_free_kicker_left_side_with_enemy_robot_at_middle_left_on_field)
@@ -215,7 +216,7 @@ TEST_F(ShadowFreekickerTacticTest,
 
     EXPECT_GT(enemy_to_dest_angle, enemy_to_ball_angle);
 }
-
+// clang-format off
 /**
  *  The two tests immediate below has the scene shown in the graph below
  *
@@ -254,6 +255,7 @@ TEST_F(ShadowFreekickerTacticTest,
  *     +----------------------------------------------------------------+X+X+----------------------------------------------------------------+
  *                                                                        X  Enemy
  */
+// clang-format on
 
 TEST_F(ShadowFreekickerTacticTest,
        test_shadow_free_kicker_left_side_with_enemy_robot_at_middle_right_on_field)
@@ -327,6 +329,7 @@ TEST_F(ShadowFreekickerTacticTest,
     EXPECT_LT(enemy_to_dest_angle, enemy_to_ball_angle);
 }
 
+// clang-format off
 /**
  *  The two tests immediate below has the scene shown in the graph below
  *                                                                                                                                         Enemy
@@ -365,7 +368,7 @@ TEST_F(ShadowFreekickerTacticTest,
  *     +------------------------------------------------------------------+------------------------------------------------------------------+
  *
  */
-
+// clang-format on
 TEST_F(ShadowFreekickerTacticTest,
        test_shadow_free_kicker_right_side_with_enemy_robot_at_top_left_on_field)
 {
@@ -415,7 +418,7 @@ TEST_F(ShadowFreekickerTacticTest,
 
     EXPECT_LT(enemy_to_dest_angle, enemy_to_ball_angle);
 }
-
+// clang-format off
 /**
  *  The two tests immediate below has the scene shown in the graph below
  *
@@ -454,7 +457,7 @@ TEST_F(ShadowFreekickerTacticTest,
  *     +------------------------------------------------------------------+-----------------------------------------------------------------X+X
  *                                                                                                                                           X
  */
-
+// clang-format on
 TEST_F(ShadowFreekickerTacticTest,
        test_shadow_free_kicker_right_side_with_enemy_robot_at_top_right_on_field)
 {
@@ -502,7 +505,7 @@ TEST_F(ShadowFreekickerTacticTest,
 
     EXPECT_LT(enemy_to_dest_angle, enemy_to_ball_angle);
 }
-
+// clang-format off
 /**
  *  The two tests immediate below has the scene shown in the graph below
  *
@@ -541,7 +544,7 @@ TEST_F(ShadowFreekickerTacticTest,
  *     +------------------------------------------------------------------+------------------------------------------------------------------+
  *
  */
-
+// clang-format on
 TEST_F(ShadowFreekickerTacticTest,
        test_shadow_free_kicker_right_side_with_enemy_robot_at_bottom_left_on_field)
 {
@@ -566,7 +569,7 @@ TEST_F(ShadowFreekickerTacticTest,
 
     EXPECT_GT(enemy_to_dest_angle, enemy_to_ball_angle);
 }
-
+// clang-format off
 /**
  *  The two tests immediate below has the scene shown in the graph below
  *
@@ -605,7 +608,7 @@ TEST_F(ShadowFreekickerTacticTest,
  *    X+X-----------------------------------------------------------------+------------------------------------------------------------------+
  *     X  Enemy
  */
-
+// clang-format on
 TEST_F(ShadowFreekickerTacticTest,
        test_shadow_free_kicker_left_side_with_enemy_robot_at_botom_right_on_field)
 {
@@ -654,7 +657,7 @@ TEST_F(ShadowFreekickerTacticTest,
 
     EXPECT_GT(enemy_to_dest_angle, enemy_to_ball_angle);
 }
-
+// clang-format off
 /**
  *  The two tests immediate below has the scene shown in the graph below                                                                               |
  *                                                                                                                                                     X
@@ -693,7 +696,7 @@ TEST_F(ShadowFreekickerTacticTest,
  *     +------------------------------------------------------------------+------------------------------------------------------------------+
  *
  */
-
+// clang-format on
 TEST_F(ShadowFreekickerTacticTest,
        test_shadow_free_kicker_left_side_with_enemy_robot_at_origin_on_field)
 {
@@ -738,7 +741,7 @@ TEST_F(ShadowFreekickerTacticTest,
 
     EXPECT_GT(enemy_to_dest_angle, enemy_to_ball_angle);
 }
-
+// clang-format off
 /**
  *  The two tests immediate below has the scene shown in the graph below
  *
@@ -777,7 +780,7 @@ TEST_F(ShadowFreekickerTacticTest,
  *     +------------------------------------------------------------------+------------------------------------------------------------------+
  *
  */
-
+// clang-format on
 TEST_F(ShadowFreekickerTacticTest,
        test_shadow_free_kicker_left_side_without_robot_in_enemy_team)
 {
